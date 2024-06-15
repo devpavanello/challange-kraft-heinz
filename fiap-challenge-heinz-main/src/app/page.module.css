@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.bg {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+
+.maindiv {
+    display: grid;
+    grid-template-columns: auto 40vw;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 80%;
+    box-shadow: 0 0 32px 4px gray;
+}
+
+.maindiv img{
+    object-fit: cover;
+    object-position: 30% 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    background-color: white;
+    border: none;
+    padding: 1.5rem;
+    justify-content: center;
+}
+
+
+.cardbtn {
+    display: flex;
+    justify-content: center;
+    padding: .75rem;
+}
+
+.card button {
+    width: 100%;
+    padding: .75rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: .75rem;
+    color: white;
+    background-color: #fe2e2e;
+    transition: .2s all ease-in;
+}
+
+.card button:hover {
+    background-color: #fe5757;
+}
+
+.cardinputs form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.cardinputs input:focus {
+    outline: solid 1px red;
+}
+
+
+.cardinputs input {
+    font-weight: 500;
+    font-size: 1.15rem;
+    outline: solid 1px lightgray;
+    display: block; 
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem; 
+    border-radius: 0.375rem;
+    border-width: 0;
+    box-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color); 
+    --tw-ring-inset: inset; 
+    --ring-color: #D1D5DB; 
+    width: 20vw; 
+    color: #111827; 
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: .5rem;
+}
+
+.cardinputs input[type=password] {
+    font-size: 1rem;
+    letter-spacing: .125rem;
+}
+
+.bigimg {
+    height: 100%;
+    width: 100%
+}
+
+@media screen and (max-width:1024px) {
+
+    .card {
+        
+        width: 100%;
+    }
+
+    .cardinputs input {
+        width: 40vw;
+    }
+
+    .maindiv {
+        width: 60vw;
+        display: flex;
+    }
+    .bigimg {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:672px) {
+
+    .maindiv {
+        width: 80vw;
+        display: flex;
+    }
+
+    .card  h2{
+        text-align: center;
+
+    }
+
+    .cardinputs input {
+        width: 60vw;
+    }
+}

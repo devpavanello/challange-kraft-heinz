@@ -1,0 +1,9 @@
+.bg {
+    display: flex;
+    justify-content: center;
+}
+
+
+.tablebg {
+    background-color: #313b4d;
+}
